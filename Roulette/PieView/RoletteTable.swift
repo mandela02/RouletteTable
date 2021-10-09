@@ -19,7 +19,7 @@ struct RoletteTable: View {
             
             let radius = proxy.frame(in: .local).width/2
             
-            let degree = Double(360/datasource.count)
+            let degree = Double(360) / Double(datasource.count)
             
             ZStack {
                 ForEach(datasource.indices, id: \.self) { index in
@@ -37,10 +37,12 @@ struct RoletteTable: View {
                             Color.clear
                                 .frame(maxWidth: .infinity)
                             Text(data.title)
+                                .lineLimit(1)
                                 .font(Font.body.bold())
-                                .foregroundColor(.white)
-                                .frame(maxWidth: .infinity)
-                                .offset(x: 20)
+                                .foregroundColor(.black)
+                                .padding(.leading, radius / 4)
+                                .padding(.trailing, 5)
+                                .frame(maxWidth: .infinity, alignment: .center)
                         }.rotationEffect(.degrees(degree / 2))
                     }
                     .rotationEffect(.degrees(-90 - degree/2))

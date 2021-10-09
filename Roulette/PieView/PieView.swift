@@ -7,12 +7,48 @@
 
 import SwiftUI
 
+enum SpecialEffect {
+    case hello
+}
+
 struct PieView: View {
     let datasource = [PieSlideModel(title: "Eat", color: Color.red),
                       PieSlideModel(title: "Shower", color: Color.blue),
                       PieSlideModel(title: "Game", color: Color.yellow),
                       PieSlideModel(title: "Work", color: Color.green),
-                      PieSlideModel(title: "Gundam", color: Color.purple)]
+                      PieSlideModel(title: "Gundam", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple),
+                      PieSlideModel(title: "Sleep", color: Color.red),
+                      PieSlideModel(title: "Movie", color: Color.blue),
+                      PieSlideModel(title: "Go out", color: Color.yellow),
+                      PieSlideModel(title: "Work out", color: Color.purple)]
         
     @State
     private var endDegree: Double = 0

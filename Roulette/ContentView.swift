@@ -18,8 +18,6 @@ struct ContentView: View {
                     Spacer()
                     ZStack(alignment: .top) {
                         PieView()
-                            .frame(width: proxy.size.width - 20,
-                                   height: proxy.size.width - 20)
                             .padding(.all, 10)
                             .background(Color.white)
                             .clipShape(Circle())
@@ -27,6 +25,8 @@ struct ContentView: View {
                                     radius: 3)
                         triangle
                     }
+                    .frame(width: proxy.size.width - 20,
+                           height: proxy.size.width - 20)
                     
                     Spacer()
                 }
@@ -41,13 +41,13 @@ struct ContentView: View {
         
         return ZStack {
             Triangle(width: triangleWidth,
-                     height: hypotenuse(triangleWidth, triangleWidth / 2),
+                     height: height(triangleWidth),
                      radius: 3)
                 .fill(Color.white)
                 .shadow(color: Color.black.opacity(0.5), radius: 3)
 
             Triangle(width: triangleWidth,
-                     height: hypotenuse(triangleWidth, triangleWidth / 2),
+                     height: height(triangleWidth),
                      radius: 3)
                 .stroke(Color.gray, style: StrokeStyle(lineWidth: 3,
                                                        lineCap: .round,
@@ -56,6 +56,10 @@ struct ContentView: View {
         .frame(width: triangleWidth, height: triangleWidth)
         .rotationEffect(.degrees(180))
         .offset(x: -triangleWidth/2, y: -triangleWidth/2 - 10)
+    }
+    
+    func height(_ a: Double) -> Double {
+        return (a * a - (a / 2) * (a / 2)).squareRoot()
     }
     
     func hypotenuse(_ a: Double, _ b: Double) -> Double {
