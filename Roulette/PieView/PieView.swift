@@ -99,7 +99,7 @@ struct PieView: View {
         let minusRevolution = Int(endDegree.rounded(.down))
             .quotientAndRemainder(dividingBy: 360).quotient
         
-        let chunk = Double(360 / datasource.count)
+        let chunk = Double(360) / Double(datasource.count)
         
         let endDegree = 360 - (endDegree - Double(360 * minusRevolution))
         
