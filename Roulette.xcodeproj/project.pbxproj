@@ -11,6 +11,12 @@
 		90461253271091CD00041206 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90461252271091CD00041206 /* ContentView.swift */; };
 		90461255271091D000041206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90461254271091D000041206 /* Assets.xcassets */; };
 		90461258271091D000041206 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90461257271091D000041206 /* Preview Assets.xcassets */; };
+		9046125F271091FE00041206 /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046125E271091FE00041206 /* PieView.swift */; };
+		906604C02711585D00BAD4F3 /* PieSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906604BF2711585D00BAD4F3 /* PieSlideView.swift */; };
+		906604C22711587300BAD4F3 /* RoletteTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906604C12711587300BAD4F3 /* RoletteTable.swift */; };
+		906604C42711588600BAD4F3 /* RotationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906604C32711588600BAD4F3 /* RotationModifier.swift */; };
+		906604C7271158A900BAD4F3 /* PieSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906604C6271158A900BAD4F3 /* PieSlideModel.swift */; };
+		906604C9271158CB00BAD4F3 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906604C8271158CB00BAD4F3 /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		90461252271091CD00041206 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90461254271091D000041206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90461257271091D000041206 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9046125E271091FE00041206 /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
+		906604BF2711585D00BAD4F3 /* PieSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSlideView.swift; sourceTree = "<group>"; };
+		906604C12711587300BAD4F3 /* RoletteTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoletteTable.swift; sourceTree = "<group>"; };
+		906604C32711588600BAD4F3 /* RotationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationModifier.swift; sourceTree = "<group>"; };
+		906604C6271158A900BAD4F3 /* PieSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSlideModel.swift; sourceTree = "<group>"; };
+		906604C8271158CB00BAD4F3 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		9046124F271091CD00041206 /* Roulette */ = {
 			isa = PBXGroup;
 			children = (
+				906604BE2711584900BAD4F3 /* PieView */,
 				90461250271091CD00041206 /* RouletteApp.swift */,
 				90461252271091CD00041206 /* ContentView.swift */,
+				906604C8271158CB00BAD4F3 /* Triangle.swift */,
 				90461254271091D000041206 /* Assets.xcassets */,
 				90461256271091D000041206 /* Preview Content */,
 			);
@@ -65,6 +79,18 @@
 				90461257271091D000041206 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		906604BE2711584900BAD4F3 /* PieView */ = {
+			isa = PBXGroup;
+			children = (
+				9046125E271091FE00041206 /* PieView.swift */,
+				906604BF2711585D00BAD4F3 /* PieSlideView.swift */,
+				906604C12711587300BAD4F3 /* RoletteTable.swift */,
+				906604C32711588600BAD4F3 /* RotationModifier.swift */,
+				906604C6271158A900BAD4F3 /* PieSlideModel.swift */,
+			);
+			path = PieView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				90461253271091CD00041206 /* ContentView.swift in Sources */,
+				906604C22711587300BAD4F3 /* RoletteTable.swift in Sources */,
+				906604C7271158A900BAD4F3 /* PieSlideModel.swift in Sources */,
+				906604C42711588600BAD4F3 /* RotationModifier.swift in Sources */,
 				90461251271091CD00041206 /* RouletteApp.swift in Sources */,
+				9046125F271091FE00041206 /* PieView.swift in Sources */,
+				906604C02711585D00BAD4F3 /* PieSlideView.swift in Sources */,
+				906604C9271158CB00BAD4F3 /* Triangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
